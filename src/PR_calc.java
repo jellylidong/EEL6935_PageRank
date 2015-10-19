@@ -28,7 +28,7 @@ public class PR_calc {
 			float rank = Float.parseFloat(line.substring(0, split));
 			
 			
-			line = line.substring(split+2); // count||u1 u2 u3 .........
+			line = line.substring(split+2); // count||u1 u2 u3 .......................
 			output.collect(newKey, new Text("||"+line)); // ||count||u1 u2 u3 ... or ||count||
 			split = line.indexOf("||");
 			float count = Float.parseFloat(line.substring(0, split));
